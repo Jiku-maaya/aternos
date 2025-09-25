@@ -2,10 +2,7 @@ require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 const Aternos = require("aternos-unofficial-api");
 
-// Puppeteer Chromium path handling
-// For Render (Linux), it defaults to /usr/bin/chromium-browser
-// For Windows local testing, use your .env variable
-process.env.PUPPETEER_EXECUTABLE_PATH = process.env.PUPPETEER_EXECUTABLE_PATH || "/usr/bin/chromium-browser";
+
 
 const client = new Client({
   intents: [
